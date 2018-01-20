@@ -4,7 +4,7 @@ const vm = require('vm');
 
 const file = {
   content: `
-    require('./someModule').a
+    require('./someModule')
     console.log('hello');
   `,
   path: 'virtual.js'
