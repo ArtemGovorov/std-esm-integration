@@ -7,7 +7,7 @@ const file = {
     import a from './someModule'
     console.log('hello');
   `,
-  path: 'path/virtual.js'
+  path: 'virtual.js'
 };
 
 const sourceCode = Module.wrap(file.content);
