@@ -1,6 +1,5 @@
 const path = require('path');
 const Module = require('module');
-const vm = require('vm');
 
 const file = {
   content: `
@@ -9,9 +8,6 @@ const file = {
   `,
   path: 'virtual.js'
 };
-
-const sourceCode = Module.wrap(file.content);
-const runner = vm.runInThisContext(sourceCode, {filename: file.path});
 
 const entryModule = new Module('.', null);
 entryModule.filename = file.path;
