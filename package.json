@@ -6,6 +6,7 @@
   },
   "scripts": {
     "esm": "ESM_OPTIONS=cjs node -r @std/esm esm.js",
+    "esm-compile": "ESM_OPTIONS=cjs node -r @std/esm esm-compile.js",
     "commonjs": "ESM_OPTIONS=cjs node -r @std/esm commonjs.js"
   }
 }
