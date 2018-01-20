@@ -5,7 +5,7 @@
     "@std/esm": "^0.19.7"
   },
   "scripts": {
-    "esm": "ESM_OPTIONS=cjs node -r @std/esm index.js",
+    "esm": "ESM_OPTIONS=cjs node -r @std/esm esm.js",
     "commonjs": "ESM_OPTIONS=cjs node -r @std/esm commonjs.js"
   }
 }
