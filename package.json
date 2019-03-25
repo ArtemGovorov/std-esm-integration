@@ -2,11 +2,10 @@
   "name": "std-esm-integration",
   "version": "0.0.1",
   "dependencies": {
-    "@std/esm": "^0.19.7"
+    "esm": "3.2.20"
   },
   "scripts": {
-    "esm": "ESM_OPTIONS=cjs node -r @std/esm esm.js",
-    "esm-compile": "ESM_OPTIONS=cjs node -r @std/esm esm-compile.js",
-    "commonjs": "ESM_OPTIONS=cjs node -r @std/esm commonjs.js"
+    "esm-simple": "ESM_OPTIONS={await:true} node -r esm esm-simple.js",
+    "esm-compile": "ESM_OPTIONS={await:true} node -r esm esm-compile.js"
   }
 }
